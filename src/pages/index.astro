@@ -1,13 +1,27 @@
 ---
+import Counter from '../components/Counter';
 import Layout from '../layouts/Layout.astro';
+import { Picture } from '@astrojs/image/components';
 ---
 
 <Layout title='Astro Template'>
-  <h1
-    class='bg-zinc-9 text-zinc-3 text-center text-6xl fw-900 group flex justify-center gap-3 items-center h-screen'
-  >
-    Hello World!<span
-      class='group-hover:animate-wobble duration-1000 inline-block i-tabler-hand-stop'
-    ></span>
-  </h1>
+  <main class='bg-zinc-8 text-zinc-3 min-h-screen relative'>
+    <Picture
+      class='w-screen h-screen object-cover absolute inset-0'
+      fit='cover'
+      alt='a frog on a branch'
+      src='/images/frog.jpg'
+      sizes='(max-width: 1200px) 100vw, 1200px'
+      widths={[400, 800, 1200]}
+      aspectRatio='16:9'
+    />
+    <h1
+      class='text-6xl font-900 z-10 absolute -translate-1/2 left-1/2 top-25 flex items-center text-shadow-lg'
+    >
+      Hello World!<span
+        class='animate-wobble animate-count-infinite animate-duration-2000 inline-block m-5 i-tabler-hand-stop'
+      ></span>
+    </h1>
+    <Counter client:load />
+  </main>
 </Layout>
