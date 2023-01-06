@@ -5,7 +5,7 @@ import { Picture } from '@astrojs/image/components';
 ---
 
 <Layout title='Astro Template'>
-  <main class='bg-zinc-8 text-zinc-3 min-h-screen relative'>
+  <main class='bg-zinc-8 min-h-screen relative mix-tint-50:text-blue'>
     <Picture
       class='w-screen h-screen object-cover absolute inset-0'
       fit='cover'
@@ -16,10 +16,10 @@ import { Picture } from '@astrojs/image/components';
       aspectRatio='16:9'
     />
     <h1
-      class='text-6xl font-900 z-10 absolute -translate-1/2 left-1/2 top-25 flex items-center text-shadow-lg'
+      class='w-full text-center text-4xl font-900 z-10 absolute -translate-1/2 vertical-mid left-1/2 top-25 text-shadow-lg'
     >
       Hello World!<span
-        class='animate-wobble animate-count-infinite animate-duration-2000 inline-block m-5 i-tabler-hand-stop'
+        class='animate-wobble animate-count-infinite animate-duration-2000 i-tabler-hand-stop'
       ></span>
     </h1>
     <Counter client:load />
