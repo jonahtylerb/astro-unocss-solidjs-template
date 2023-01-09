@@ -7,7 +7,10 @@ import compress from 'astro-compress';
 export default defineConfig({
   integrations: [
     solidJs(),
-    unocss(),
+    unocss({
+      mode: 'dist-chunk',
+      injectReset: '@unocss/reset/antfu.css',
+    }),
     image({
       serviceEntryPoint: '@astrojs/image/sharp',
     }),

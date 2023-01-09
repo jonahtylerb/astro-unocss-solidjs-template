@@ -26,6 +26,16 @@ export default defineConfig({
       },
     }),
   ],
+  rules: [
+    [
+      /^font-([a-zA-Z]*)$/,
+      ([, c]) => {
+        return {
+          'font-family': `${c}, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`,
+        };
+      },
+    ],
+  ],
   theme: {
     fontSize: {
       sm: ['clamp(1.00rem, calc(0.92rem + 0.39vw), 1.20rem)', '1.4'],
