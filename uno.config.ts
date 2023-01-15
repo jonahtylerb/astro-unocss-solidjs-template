@@ -31,6 +31,15 @@ export default defineConfig({
       },
     ],
   ],
+  shortcuts: [
+    {
+      'flex-center': 'items-center justify-center',
+    },
+    {
+      'absolute-center': '-translate-1/2 left-1/2 top-1/2',
+    },
+    [/^size-(.*)$/, ([, s]) => `h-${s} w-${s}`],
+  ],
   theme: {
     fontSize: {
       sm: ['clamp(1.00rem, calc(0.92rem + 0.39vw), 1.20rem)', '1.4'],
