@@ -2,6 +2,12 @@
 
 This is the template I use for making websites.
 
+## How do I use this?
+
+1. Click use this template at the top of this window 🔝
+2. Clone the repository to your computer
+3. Run `pnpm install`
+
 ## Features Include
 
 - Astro for ssg or ssr
