@@ -2,14 +2,17 @@
 
 This is the template I use for making websites.
 
-
 ## Features Include
-1. Astro
-2. UnoCSS
-3. Solidjs
-4. Astro-Compress
-5. Astro-Image-Tools
-6. Astro-GoogleFontsOptimizer
-7. Typescript
-8. Dynamic font size added to UnoCSS
-9. Icons with UnoCSS/icons and Tabler
+
+- Astro for ssg or ssr
+- Astro-Compress to compress all images and files
+- Astro-image-tools to create responsive images
+- Astro-GoogleFontsOptimizer to optimize fonts from google fonts. Similar to Next.js
+- Solidjs for reactive components
+- UnoCSS for styling
+- PresetUno for basic styles
+- PresetAttributify for attribute styles
+- PresetTagify for tag styles
+- PresetIcons for tabler icons
+- Custom shortcuts, rules, and theme to add personal styles
+- Typescript for type checking
