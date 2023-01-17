@@ -3,7 +3,7 @@
   "tasks": [
     {
       "type": "npm",
-      "script": "dev --open",
+      "script": "dev",
       "group": "none",
       "presentation": {
         "reveal": "never",
