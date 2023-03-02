@@ -15,7 +15,6 @@
     "@astrojs/solid-js": "^1.2.3",
     "astro": "^1.9.1",
     "astro-compress": "^1.1.25",
-    "sharp": "^0.31.3",
     "solid-js": "^1.6.8"
   },
   "devDependencies": {

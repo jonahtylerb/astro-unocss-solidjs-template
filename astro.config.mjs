@@ -8,9 +8,7 @@ export default defineConfig({
   integrations: [
     solidJs(),
     unocss(),
-    image({
-      serviceEntryPoint: '@astrojs/image/sharp',
-    }),
+    image(),
     compress(),
   ],
 });
